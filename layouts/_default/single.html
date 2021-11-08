@@ -47,8 +47,15 @@
             <img class="m-auto" src="https://toburger.github.io/new.ochsenkofler.it/assets/images/blumen.png" />
         </div>
     </div>
-    <div class="flex-auto col-auto overflow-auto">
+    <div class="relative flex-auto col-auto overflow-auto">
         {{ .Content }}
+
+        <div class="fixed right-3 bottom-3 filter drop-shadow-xl hidden md:block">
+            <img class="cursor-pointer" src="https://toburger.github.io/new.ochsenkofler.it/assets/images/kontakt.svg"
+                alt="Kontakt" />
+            <img class="cursor-pointer" src="https://toburger.github.io/new.ochsenkofler.it/assets/images/anfahrt.svg"
+                alt="Anfahrt" />
+        </div>
     </div>
 </div>
 {{ end }}
