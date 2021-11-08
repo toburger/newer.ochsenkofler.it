@@ -2,7 +2,9 @@
 <div class="md:grid grid-rows-ochsenkofler grid-cols-ochsenkofler w-full h-screen gap-0 font-body">
     <div class="bg-ochsenkofler-primary text-white md:flex justify-center items-stretch">
         <div class="flex flex-col justify-center lg:justify-end px-20 md:px-0 pt-10 md:pt-16 md:pb-12">
-            <img src="https://toburger.github.io/new.ochsenkofler.it/assets/images/logo.svg">
+            <a href='{{ "/" | relURL }}'>
+                <img src="https://toburger.github.io/new.ochsenkofler.it/assets/images/logo.svg">
+            </a>
             <p class="text-center flex-shrink-0 pt-5 italic">
                 Die Familie Burger<br />
                 heißt Sie herzlich Willkommen</br />
@@ -36,20 +38,7 @@
         </div>
     </div>
     <div class="bg-ochsenkofler-secondary flex-auto col-auto flex flex-col justify-between shadow-lg overflow-x-auto">
-        <nav class="italic bold">
-            <ul class="py-12 text-center text-2xl flex flex-col gap-4 ">
-                <li><a href="#" class="text-ochsenkofler-primary">Willkommen</a></li>
-                <li><a href="#" class="hover:text-ochsenkofler-primary">Wohnungen & Preise</a></li>
-                <li><a href="#" class="hover:text-ochsenkofler-primary">Anfrage & Kontakt</a></li>
-                <li><a href="#" class="hover:text-ochsenkofler-primary">Umgebung</a></li>
-                <li><a href="#" class="hover:text-ochsenkofler-primary">Über uns</a></li>
-                <li>
-                    <a href="#" class="hover:text-ochsenkofler-primary">de</a>
-                    |
-                    <a class="hover:text-ochsenkofler-primary" href="#">it</a>
-                </li>
-            </ul>
-        </nav>
+        {{ partial "sidebar.html" . }}
         <div class="p-5 pb-12 md:pb-5 border-t border-gray-300 text-gray-500 mx-16 flex-none">
             <p class="text-center pb-5">
                 Familie Burger<br />
