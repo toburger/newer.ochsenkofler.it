@@ -20,7 +20,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Hugo Publish
-      uses: avinassh/hugo-publish@0.0.1
+    - name: Action Hugo
+      # You may pin to the exact commit or the version.
+      # uses: kevvurs/action-hugo@23ea7d07ea54e66257252f150e06622c47bc24ed
+      uses: kevvurs/action-hugo@v1.0-rc2
+
